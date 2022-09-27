@@ -40,6 +40,8 @@ public class Student_controller {
 	public List<Student> getList(@RequestBody Student e) {
 		return studentser.getList(e);
 		}
+	
+	
 	@PostMapping(value="/saveAll")
 	public String saveAll(@RequestBody List<Student> e) {
 		return studentser.saveAll(e);
